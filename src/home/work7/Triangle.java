@@ -14,7 +14,7 @@ public class Triangle extends Shape {
 		this.setPerimetr(this.side1 + this.side2 + (Math.sqrt(this.side1 * this.side1 + this.side2 * this.side2
 				- 2 * this.side1 * this.side2 * Math.cos(Math.toDegrees(this.angle)))));
 	}
-	
+	@Override
 	public void getInfo() {
 		super.getInfo();
 		System.out.println(", Side1: "+side1+", Side2: "+side2+", Angle: "+angle);

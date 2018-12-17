@@ -8,7 +8,7 @@ public class Square extends Shape {
 		this.setArea(side*side);
 		this.setPerimetr(4*side);
 	}
-	
+	@Override
 	public void getInfo() {
 		super.getInfo();
 		System.out.println(" Side: "+side);

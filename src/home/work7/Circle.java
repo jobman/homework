@@ -9,6 +9,7 @@ public class Circle extends Shape {
 		this.setArea(Math.PI*radius*radius);
 		this.setPerimetr(Math.PI*2*radius);
 	}
+	@Override
 	public void getInfo() {
 		super.getInfo();
 		System.out.println(", Radius: "+radius);
