@@ -4,26 +4,31 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		Cart cart = new Cart();
+		Customer customer = new Customer(cart);
+		
 		Product product1 = new Product("Bread", 13);
 		Product product2 = new Product("Bread", 10);
 		Product product3 = new Product("Semki", 10);
 		Product product4 = new Product("Milk", 5);
 		Product product5 = new Product("Milk", 5);
 
-		cart.getInfo();
+		if(customer.getCart()!=null) {
+		customer.getCart().getInfo();
 		System.out.println();
 
-		cart.addProduct(product1);
-		cart.addProduct(product2);
-		cart.addProduct(product3);
-		cart.addProduct(product4);
-		cart.addProduct(product5);
-		cart.getInfo();
+		customer.addProduct(product1);
+		customer.addProduct(product2);
+		customer.addProduct(product3);
+		customer.addProduct(product4);
+		customer.addProduct(product5);
+		customer.getInfo();
 		System.out.println();
 
-		cart.deleteProductByName("Bread");
-		cart.getInfo();
-
+		customer.getCart().deleteProductByName("Bread");
+		customer.getInfo();
+		} else {
+			System.out.println("Customer dont have cart");
+		}
 	}
 
 }
