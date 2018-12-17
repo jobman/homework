@@ -1,6 +1,6 @@
-package home.work62;
+package home.work7;
 
-public class PerimetrCalculationCircle implements PerimetrCalculation{
+public class PerimetrCalculationTriangle implements PerimetrCalculation{
 
 	@Override
 	public int calculatePerimetr() {

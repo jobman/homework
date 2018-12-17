@@ -1,6 +1,6 @@
-package home.work62;
+package home.work7;
 
-public class AreaCalculationTriangle implements AreaCalculation{
+public class AreaCalculationSquare implements AreaCalculation{
 
 	@Override
 	public int calculateArea() {

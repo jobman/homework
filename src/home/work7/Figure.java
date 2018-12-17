@@ -1,4 +1,4 @@
-package home.work62;
+package home.work7;
 
 public abstract class Figure {
 	/*private String color;
