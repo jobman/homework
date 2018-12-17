@@ -25,7 +25,8 @@ public class Cart {
 		if(countOfProducts>0) {
 			for (int i = 0; i < setOfProducts.length; i++) {
 				if (setOfProducts[i] != null) {
-					System.out.println(setOfProducts[i].getName());
+					setOfProducts[i].getInfo();
+					//System.out.println(setOfProducts[i].getName());
 					total+=setOfProducts[i].getPrice();
 				}
 			}
