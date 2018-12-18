@@ -27,6 +27,6 @@ public class Product {
 	}
 
 	public void getInfo() {
-		System.out.println("Name: " + name + ", Price " + price);
+		System.out.println("Name: " + this.name + ", Price " + this.price);
 	}
 }
