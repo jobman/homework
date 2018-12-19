@@ -1,4 +1,4 @@
-package home.work62;
+package home.work8;
 
 public class MainClass {
 
