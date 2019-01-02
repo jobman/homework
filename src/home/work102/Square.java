@@ -15,15 +15,16 @@ public class Square extends Shape {
     super.getInfo();
     System.out.println(" Side: " + side);
   }
-  
+
 
   @Override
   protected double calcArea() {
     return side * side;
   }
+
   @Override
   protected double calcPerim() {
     return 4 * side;
   }
-  
+
 }

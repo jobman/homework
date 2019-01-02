@@ -49,9 +49,9 @@ public class MainClass {
           try {
             arr[count] = new Triangle(side1, side2, side3);
             count++;
-          } catch(IllegalArgumentException e) {
+          } catch (IllegalArgumentException e) {
             System.out.println("Not correct sides, triangle cant exist");
-          }         
+          }
           break;
         default:
           System.out.println("Not correct number");

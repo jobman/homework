@@ -5,14 +5,15 @@ public abstract class Shape {
   private String name;
   private double perimetr;
   private double area;
-  
-  private static class ColorSeter{
-    
-    private static String ColorsArr[] = {"Red", "Orange","Yellow","Green","Blue","Ochra","Ultramarine","Brown","Violet","Olive"};
-    
-    public static String makeColor(){
-      int rnd = (int)(Math.random()*ColorsArr.length);
-      String color = ColorsArr[rnd];      
+
+  private static class ColorSeter {
+
+    private static String ColorsArr[] = {"Red", "Orange", "Yellow", "Green", "Blue", "Ochra",
+        "Ultramarine", "Brown", "Violet", "Olive"};
+
+    public static String makeColor() {
+      int rnd = (int) (Math.random() * ColorsArr.length);
+      String color = ColorsArr[rnd];
       return color;
     }
   }
@@ -62,7 +63,7 @@ public abstract class Shape {
   protected double calcArea() {
     return 0;
   }
-  
+
   protected double calcPerim() {
     return 0;
   }
