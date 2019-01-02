@@ -1,4 +1,4 @@
-package home.work92;
+package home.work102;
 
 public class Square extends Shape {
   private int side;

@@ -1,4 +1,4 @@
-package home.work92;
+package home.work102;
 
 import java.util.Scanner;
 
@@ -39,15 +39,19 @@ public class MainClass {
         case 3:
           int side1;
           int side2;
-          int angle;
+          int side3;
           System.out.println("Enter side1");
           side1 = in.nextInt();
           System.out.println("Enter side2");
           side2 = in.nextInt();
-          System.out.println("Enter angle");
-          angle = in.nextInt();
-          arr[count] = new Triangle(side1, side2, angle);
-          count++;
+          System.out.println("Enter side3");
+          side3 = in.nextInt();
+          try {
+            arr[count] = new Triangle(side1, side2, side3);
+            count++;
+          } catch(IllegalArgumentException e) {
+            System.out.println("Not correct sides, triangle cant exist");
+          }         
           break;
         default:
           System.out.println("Not correct number");

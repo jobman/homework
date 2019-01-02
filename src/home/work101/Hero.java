@@ -1,6 +1,6 @@
-package home.work91;
+package home.work101;
 
-public class Hero {
+public abstract class Hero {
 
   Item[] slot = new Item[2];
   private int strenght;

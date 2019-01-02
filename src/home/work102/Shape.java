@@ -1,6 +1,6 @@
-package home.work92;
+package home.work102;
 
-public class Shape {
+public abstract class Shape {
   private String color;
   private String name;
   private double perimetr;
