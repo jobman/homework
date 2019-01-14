@@ -3,22 +3,27 @@ package home.work101;
 public class DotaEngine {
   Hero hero1;
   Hero hero2;
-  
+
   public DotaEngine(Hero hero1, Hero hero2) {
-    this.hero1=hero1;
-    this.hero2=hero2;
+    this.hero1 = hero1;
+    this.hero2 = hero2;
   }
+
   public void start() {
     boolean end = false;
     Item latar = new Item("Shadow Blade", 12, 4, 2);
     Item linsa = new Item("Aether Lens", 10, 2, 14);
+    Store store = new Store();
+    store.addItem(linsa);
+    store.addItem(latar);
+    System.out.println("Store " + store.getItemTree());
     
     hero1.takeOnSlot(latar, 0);
     hero2.takeOnSlot(linsa, 0);
     linsa = null;
     linsa = hero2.takeOffSlot(0);
-    hero1.takeOnSlot(linsa, 1);
-    
+
+
     System.out.println("Battle: " + hero2.getName() + " vs " + hero1.getName());
     while (!end) {
       try {

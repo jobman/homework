@@ -11,14 +11,20 @@ public class Store {
     @Override
     public int compare(Item item1, Item item2) {
 
-      return ((item1.getIntelect() > item2.getIntelect()) ? (item1.getIntelect())
-          : (item2.getIntelect()));
+      if (item1.getIntelect() > item2.getIntelect()) {
+        return 1;
+      } else if (item1.getIntelect() < item2.getIntelect()) {
+        return -1;
+      } else {
+        return 0;
+      }
+
     }
 
   }
 
-  Comparator<Item> intelectComparator = new IntelectComparator();
-  TreeSet<Item> itemTree = new TreeSet<Item>(intelectComparator);
+  private Comparator<Item> intelectComparator = new IntelectComparator();
+  private TreeSet<Item> itemTree = new TreeSet<Item>(intelectComparator);
 
   Store() {
 
@@ -35,6 +41,10 @@ public class Store {
         it.remove();
       }
     }
+  }
+
+  public TreeSet<Item> getItemTree() {
+    return itemTree;
   }
 
 }
